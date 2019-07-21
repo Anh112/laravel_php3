@@ -11,6 +11,17 @@
 |
 */
 
-Route::get('hello', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('hello','HelloController@hello');
+// Route::get('users/{id}/{name}'), function ($index,$name){
+// 	return 'Tham so truyen vao la '.$index.'+'.$name;
+// })
+Route::get('input','SumController@sumView')->name('sum-view');
+Route::get('/', function(){
+	return view('welcome');
 });
+Route::post('sum','SumController@sum')->name('sum');
+Route::get('students','StudentController@index')->name('students');
+Route::get('classes','ClassRoomController@index')->name('classes');

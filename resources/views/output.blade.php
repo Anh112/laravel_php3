@@ -1,0 +1,1 @@
+<div>Ket qua: {{$ketqua}}</div>
