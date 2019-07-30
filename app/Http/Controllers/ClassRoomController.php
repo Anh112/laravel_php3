@@ -8,6 +8,6 @@ class ClassRoomController extends Controller
 {
    public function index(){
    	$classes = ClassRoom::all();
-   	return view('classes', ['classes' => $classes]);
+   	return view('index2', ['classes' => $classes]);
    }
 }
